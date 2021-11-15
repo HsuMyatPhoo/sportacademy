@@ -1,0 +1,828 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /*perspective:1000px;*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.left{
+    position:fixed;
+    float:left; 
+    width:15%;
+    height:100vh;
+    background-color:#5d5d5a; 
+    border-radius:0 2% 2% 0;
+}
+.left img{
+   margin:5% 0 5% 25%;
+    border-radius:50%;
+}
+.left h2{
+    color:#ffa45c;
+    font-family: 'Fruktur', cursive;
+    padding:0;
+    margin:0;
+    margin-bottom:10%;
+    text-align:center;
+    text-shadow:2px 2px 2px #965f38;
+    cursor:pointer;
+}
+
+.menu ul{
+    width:75%;
+    height:20%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.menu ul li{
+    display:block;
+    width:100%;
+    text-align:center;
+
+}
+.menu ul li a{
+    display:block;
+    width:100%;
+    margin:auto;
+    font-size:20px;
+    text-decoration:none;
+    color:#4592af;
+
+    transition:all 0.5s;
+}
+.a span{
+    display:block;
+    width:100%;
+    padding:0 5%;
+}
+.a span:first-of-type{
+    color:#ffcdab;
+    text-shadow:2px 2px 3px #4d2238;
+    transform: scale(1);
+    transition:all 0.5s;
+    transition-delay:0.5s;
+
+}
+.a span:last-of-type{
+    color:#ffa45c;
+    text-shadow: 2px 2px 3px #45381c;
+    transform:translateY(-100%) scale(0);
+    transition:all 0.5s;
+}
+.a:hover span:first-of-type,.a:active span:first-of-type{
+    transform: scale(0);
+    transition-delay:0s;
+}
+.a:hover span:last-of-type,.a:active span:last-of-type{
+    transform:translateY(-100%) scale(1.1);
+     transition-delay:0.5s;
+}
+
+
+
+
+.container{
+    width:85%;
+    height:1200px;
+    float:left;
+    margin-left:15%;
+}
+.div1{
+    width:100%;
+    height:600px;
+    text-align:center;
+    object-fit:cover;
+}
+
+/*about us*/
+.div2{
+    width:50%;
+    height:300px;
+    background-color:#ffa45c;
+    padding:20px 25px;
+    margin:2% 0 3% 35%;
+    border-radius:30px;
+    overflow:hidden;
+
+    position:relative;
+    transition:all 1s;
+}
+.div2:before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#ffcdab;
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    transform:translateX(-100%);
+    transition:all 1s;
+    z-index:-1;
+}
+.div2:hover{
+    background-color:transparent;
+}
+.div2:hover::before{
+    transform:translateX(0);
+}
+
+.div2 h1{
+    padding:0;
+    margin:0;
+    color:#ffcdab;
+    text-shadow:2px 2px 2px #ddd;
+    font-size:45px;
+    text-align:center;
+    transition:all 0.5s;
+}
+.div2:hover h1{
+    color:#fff;
+}
+.div2 small{
+    display:block;
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    margin-top:-10px;
+    margin-bottom:10px;
+    transition:all 0.5s;
+}
+.div2:hover small{
+    color:#888;
+}
+.div2 p{
+    width:90%;
+    color:#5d5d5a;
+    font-size:25px;
+    margin-left:5%;
+    transition:all 0.5s;
+}
+.div2:hover p{
+    color:#ffa45c;
+}
+
+
+
+/*images*/
+.coaches1,.coaches2{
+    width:90%;
+    height:25%;
+    /*background-color:yellow;*/
+    margin:0 0 3% 5%;
+}
+
+.coaches1 .football{
+    width:28%;
+    height:100%;
+    float:left;  
+
+    position:relative;
+    transition:all 0.5s;
+
+    overflow:hidden;
+}
+.coaches1 .football img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transform:rotateY(180deg);
+    transition:all 1s;
+    opacity:0;
+}
+.football:hover img{
+    transform:rotateY(0deg);
+    transition-delay:1s;
+    opacity:1;
+}
+.football::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#5d5d5a; 
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index:3;
+    transition:all 1s;
+    transform-origin:center;
+
+}
+.football:hover::before{
+    transform:rotateY(180deg);
+    opacity:0;
+    transition-delay:1s;
+}
+
+.detail11 h2{
+    width:100%;
+    color:pink;
+    font-size:30px;
+
+    position:absolute;
+    top:10px;
+    text-align:center;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.5s;
+}
+.detail11 span{
+    width:90%;
+    color:#fff;
+    font-size:20px;
+
+    position:absolute;
+    top:50px;
+    left:5%;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.9s; 
+}
+.detail11 p{
+    width:80%;
+    color:#ffa45c;
+    font-size:17px;
+
+    position:absolute;
+    top:100px;
+    left:10%;
+
+    z-index:5;
+
+    transition:all 0.3s;
+    transition-delay:2s;   
+}
+/*end*/
+
+
+/*start*/
+.coaches1 .basketball{
+    width:28%;
+    height:100%;
+    float:left;
+    margin:0 9% 0 9%;
+
+    position:relative;
+    transition:all 0.5s;
+
+    overflow:hidden;
+}
+.coaches1 .basketball img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+
+    transform:rotateY(180deg);
+    transition:all 1s;
+    opacity:0;
+}
+.basketball:hover img{
+    transform:rotateY(0deg);
+    transition-delay:1s;
+    opacity:1;
+}
+.basketball::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#5d5d5a; 
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index:3;
+    transition:all 1s;
+    transform-origin:center;
+}
+.basketball:hover::before{
+    transform:rotateY(180deg);
+    opacity:0;
+    transition-delay:1s;
+}
+
+.detail12 h2{
+    width:100%;
+    color:pink;
+    font-size:30px;
+
+    position:absolute;
+    top:10px;
+    text-align:center;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.5s;
+}
+.detail12 span{
+    width:90%;
+    color:#fff;
+    font-size:20px;
+
+    position:absolute;
+    top:50px;
+    left:5%;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.9s;
+   
+}
+.detail12 p{
+    width:80%;
+    color:#ffa45c;
+    font-size:17px;
+
+    position:absolute;
+    top:100px;
+    left:10%;
+
+    z-index:5;
+
+    transition:all 0.3s;
+    transition-delay:2s;  
+}
+
+
+
+/*start*/
+
+.coaches1 .baseball{
+    width:25%;
+    height:100%;
+    float:left;
+
+    position:relative;
+    transition:all 0.5s;
+
+    overflow:hidden;
+}
+.coaches1 .baseball img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transform:rotateY(180deg);
+    transition:all 1s;
+    opacity:0;
+}
+.baseball:hover img{
+    transform:rotateY(0deg);
+    transition-delay:1s;
+    opacity:1;
+}
+.baseball::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#5d5d5a; 
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index:3;
+    transition:all 1s;
+    transform-origin:center;
+
+}
+.baseball:hover::before{
+    transform:rotateY(180deg);
+    opacity:0;
+    transition-delay:1s;
+}
+
+.detail13 h2{
+    width:100%;
+    color:pink;
+    font-size:30px;
+
+    position:absolute;
+    top:10px;
+    text-align:center;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.5s;
+}
+.detail13 span{
+    width:90%;
+    color:#fff;
+    font-size:20px;
+
+    position:absolute;
+    top:50px;
+    left:5%;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.9s; 
+}
+.detail13 p{
+    width:80%;
+    color:#ffa45c;
+    font-size:17px;
+
+    position:absolute;
+    top:100px;
+    left:10%;
+
+    z-index:5;
+
+    transition:all 0.3s;
+    transition-delay:2s;  
+}
+
+
+/*Coaches2*/
+.coaches2 .football2{
+    width:28%;
+    height:100%;
+    float:left;
+
+    position:relative;
+    transition:all 0.5s;
+
+    overflow:hidden;
+}
+.coaches2 .football2 img{
+    width:100%;
+    height:100%;
+    background-color:#444;
+    object-fit:cover;
+
+    transform:rotateY(180deg);
+    transition:all 1s;
+    opacity:0;
+}
+.coaches2 .football2:hover img{
+    transform:rotateY(0deg);
+    transition-delay:1s;
+    opacity:1;
+}
+.football2::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#5d5d5a; 
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index:3;
+    transition:all 1s;
+    transform-origin:center;
+}
+.football2:hover::before{
+    transform:rotateY(180deg);
+    opacity:0;
+    transition-delay:1s;
+}
+
+.detail21 h2{
+    width:100%;
+    color:pink;
+    font-size:30px;
+
+    position:absolute;
+    top:10px;
+    text-align:center;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.5s;
+}
+.detail21 span{
+    width:90%;
+    color:#fff;
+    font-size:20px;
+
+    position:absolute;
+    top:50px;
+    left:5%;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.9s;
+}
+.detail21 p{
+    width:80%;
+    color:#ffa45c;
+    font-size:17px;
+
+    position:absolute;
+    top:100px;
+    left:10%;
+
+    z-index:5;
+
+    transition:all 0.3s;
+    transition-delay:2s;   
+}
+/*end*/
+
+
+
+/*start*/
+.coaches2 .boxing{
+    width:28%;
+    height:100%;
+    float:left;
+    margin:0 8%;
+
+    position:relative;
+    transition:all 0.5s;
+
+    overflow:hidden;
+}
+.coaches2 .boxing img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transform:rotateY(180deg);
+    transition:all 1s;
+    opacity:0;
+}
+.boxing:hover img{
+    transform:rotateY(0deg);
+    transition-delay:1s;
+    opacity:1;
+}
+.boxing::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#5d5d5a; 
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index:3;
+    transition:all 1s;
+    transform-origin:center;
+
+}
+.boxing:hover::before{
+    transform:rotateY(180deg);
+    opacity:0;
+    transition-delay:1s;
+}
+
+.detail22 h2{
+    width:100%;
+    color:pink;
+    font-size:30px;
+
+    position:absolute;
+    top:10px;
+    text-align:center;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.5s;
+}
+.detail22 span{
+    width:90%;
+    color:#fff;
+    font-size:18px;
+
+    position:absolute;
+    top:50px;
+    left:5%;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.9s;  
+}
+.detail22 p{
+    width:80%;
+    color:#ffa45c;
+    font-size:17px;
+
+    position:absolute;
+    top:100px;
+    left:10%;
+
+    z-index:5;
+
+    transition:all 0.3s;
+    transition-delay:2s; 
+}
+/*end*/
+
+
+
+/*start*/
+.coaches2 .cricket{
+    width:28%;
+    height:100%;
+    float:left;
+
+    position:relative;
+    transition:all 0.5s;
+
+    overflow:hidden;
+}
+.coaches2 .cricket img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transform:rotateY(180deg);
+    transition:all 1s;
+    opacity:0;
+}
+.cricket:hover img{
+    transform:rotateY(0deg);
+    transition-delay:1s;
+    opacity:1;
+}
+.cricket::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:#5d5d5a; 
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    z-index:3;
+    transition:all 1s;
+    transform-origin:center;
+}
+.cricket:hover::before{
+    transform:rotateY(180deg);
+    opacity:0;
+    transition-delay:1s;
+}
+
+.detail23 h2{
+    width:100%;
+    color:pink;
+    font-size:30px;
+
+    position:absolute;
+    top:10px;
+    text-align:center;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.5s;
+}
+.detail23 span{
+    width:90%;
+    color:#fff;
+    font-size:20px;
+
+    position:absolute;
+    top:50px;
+    left:5%;
+
+    z-index:5;
+
+    transition:0.3s;
+    transition-delay:1.9s;
+}
+.detail23 p{
+    width:80%;
+    color:#ffa45c;
+    font-size:17px;
+
+    position:absolute;
+    top:100px;
+    left:10%;
+
+    z-index:5;
+
+    transition:all 0.3s;
+    transition-delay:2s;
+}
+
+.detail11:hover h2,.detail12:hover h2,.detail13:hover h2,.detail21:hover h2,.detail22:hover h2,.detail23:hover h2{
+    transform:translateY(-120%);
+    transition-delay:0s;
+
+}
+.detail11:hover span,.detail12:hover span,.detail13:hover span,.detail21:hover span,.detail22:hover span,.detail23:hover span{
+    transform:translateX(130%);
+     transition-delay:0.3s;
+}
+.detail11:hover p,.detail12:hover p,.detail13:hover p,.detail21:hover p,.detail22:hover p,.detail23:hover p{
+    transform:translate(-130%,100%);
+     transition-delay:0.6s;
+}
+
+
+
+
+
+
+
+
+/*Footer*/
+.foot{
+    width:100%;
+    height:250px;
+    background-color:sandybrown;
+}
+.foot .message{
+    width:50%;
+    height:100%;
+    float:left;
+}
+.message form{
+    width:80%;
+    margin:1% 0 1% 5%;
+    /*background-color:red;*/
+}
+form h2{
+    color:pink;
+    font-size:25px;
+    text-shadow:1px 1px 1px #999;
+    cursor:pointer;
+}
+.message form input{
+    width:60%;
+    height:30px;
+    margin-bottom:15px;
+    border-radius:5px;
+    outline:none;
+    border:2px solid #5d5d5a;
+}
+textarea{
+    border-radius:5px;
+    outline:none;
+    border:2px solid #5d5d5a;
+}
+
+button{
+    width:60px;
+    height:30px;
+    margin-right:10px;
+    border-radius:5px;
+    outline:none;
+    border:2px solid #5d5d5a;   
+}
+button[type='reset']{
+     margin-left:200px;
+}
+
+
+
+.foot .founder{
+    width:55%;
+    height:100%;
+    float:left;
+    margin-left:-5%;
+    /*background-color:yellow;*/
+
+    position:relative;
+}
+.founder h2{
+    width:50%;
+    color:pink;
+    text-shadow:2px 2px 2px #888;
+    font-size:30px;
+    position:absolute;
+    top:20%;
+    left:0;
+    cursor:pointer;
+}
+.founder img{
+    clip-path:circle();
+    position:absolute;
+    left:50%;
+    top:10%;
+}
+

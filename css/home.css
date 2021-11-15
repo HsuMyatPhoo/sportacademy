@@ -1,0 +1,534 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /*perspective:1000px;*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.left{
+    position:fixed;
+    float:left; 
+    width:15%;
+    height:100vh;
+    background-color:#5d5d5a; 
+    border-radius:0 2% 2% 0;
+}
+.left img{
+   margin:5% 0 5% 25%;
+    border-radius:50%;
+}
+.left h2{
+    color:#ffa45c;
+    font-family: 'Fruktur', cursive;
+    padding:0;
+    margin:0;
+    margin-bottom:10%;
+    text-align:center;
+    text-shadow:2px 2px 2px #965f38;
+
+    cursor:pointer;
+}
+
+.menu ul{
+    width:75%;
+    height:20%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.menu ul li{
+    display:block;
+    width:100%;
+    text-align:center;
+
+}
+.menu ul li a{
+    display:block;
+    width:100%;
+    margin:auto;
+    font-size:20px;
+    text-decoration:none;
+    color:#4592af;
+
+    transition:all 0.5s;
+}
+.a span{
+    display:block;
+    width:100%;
+    padding:0 5%;
+}
+.a span:first-of-type{
+    color:#ffcdab;
+    text-shadow:2px 2px 3px #4d2238;
+    transform: scale(1);
+    transition:all 0.5s;
+    transition-delay:0.5s;
+
+}
+.a span:last-of-type{
+    color:#ffa45c;
+    text-shadow: 2px 2px 3px #45381c;
+    transform:translateY(-100%) scale(0);
+    transition:all 0.5s;
+}
+.a:hover span:first-of-type,.a:active span:first-of-type{
+    transform: scale(0);
+    transition-delay:0s;
+}
+.a:hover span:last-of-type,.a:active span:last-of-type{
+    transform:translateY(-100%) scale(1.1);
+     transition-delay:0.5s;
+}
+
+
+
+
+
+
+.container{
+    width:85%;
+    float:left;
+    margin-left:15%;
+}
+.intro{
+    width:90%;
+    height:500px;
+    color:white;
+    background:url("../img/ballet6.jpg"); 
+    background-size:cover;
+    border-radius:45px;
+    margin:2% 5%;
+
+    position:relative;
+
+}
+.intro h1{
+    font-family: 'Lobster', cursive;
+    font-size:40px;
+    text-shadow:2px 3px 2px #734727;
+
+    position:absolute;
+    top:10%;
+    left:20%;
+
+    cursor: pointer;  
+}
+.intro h2{
+    font-size:30px;
+     text-shadow:2px 1px 2px #ffa45c;
+
+     position:absolute;
+     top:27%;
+     left:50%;
+
+     cursor:pointer;
+}
+.intro p{
+    width:40%;
+    color:#fff;
+    font-size:23px;
+    text-shadow:2px 2px 2px #5d5d5a;
+
+    position:absolute;
+    top:40%;
+    left:10%;
+    cursor: pointer;
+}
+.intro a{
+    text-decoration:none;
+    color:#ffa45c;
+    background:transparent;
+    font-weight:bold;  
+    padding:10px 20px;
+    border:2px outset white;
+    border-radius:5px;
+    text-shadow:2px 2px 2px #523914;
+    box-shadow:3px 3px 3px #fff;
+
+    position:absolute;
+    top:65%;
+}
+.intro .new{
+    left:55%;
+}
+.intro .find{
+    left:78%;
+}
+.intro a:hover{
+    color:white;
+    text-shadow:3px 3px 3px #555;
+}
+
+
+
+.images,.images2{
+    width:100%;
+    height:440px;
+    margin:2% 0%;
+}
+.basketball,.ballet,.golf,.gym,.cricket,.football,.hockey,.baseball,.swimming{
+    height:100%;
+    float:left;
+    border-radius:5px;
+    box-shadow:2px 2px 10px #444;
+    position:relative;
+
+    overflow:hidden;
+}
+.basketball{
+    width:28%;
+    background:url("../img/basketball3.jpg");
+    background-size:cover;
+    margin-left:2%;
+}
+.ballet{
+    width:25%;
+   background:url("../img/ballet3.jpg");
+    background-size:cover;
+    margin:5% 2% 0 2%;
+}
+.golf{
+    width:35%;
+    height:50%;
+    background:url("../img/golf.jpg");
+    background-size:cover;
+    margin-top:10%;
+}
+.gym{
+    width:40%;
+    height:80%;
+    background:url("../img/gymnastics5.jpg");
+    background-size:cover;
+    margin-top:2%;
+}
+.baseball{
+    width:40%;
+    height:50%;
+    background:url("../img/baseball2.jpg");
+    background-size:cover;
+    margin:-18% 0 0  10%;
+}
+.football{
+    width:50%;
+    height:80%;
+    background:url("../img/football.jpg");
+    background-size:cover;
+    margin:2% 0 0 3%;
+}
+.hockey{
+    width:43%;
+    height:58%;
+    background:url("../img/hockey3.jpg");
+    background-size:cover;
+    margin:4% 1% 0 3%;
+}
+
+.cricket{
+    width:44%;
+    height:70%;
+    background:url("../img/cricket.jpg");
+    background-size:cover;
+    margin:3% 2% 0 5%;
+}
+.swimming{
+    width:45%;
+    height:70%;
+    background:url("../img/swimming.jpg");
+    background-size:cover;
+    margin:1% 0% 0 3%;
+}
+.basketball::before{
+    content:'Basket Ball';
+    width:70%;
+    height:10%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-10%;
+    left:15%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.ballet::before{
+    content:'Ballet';
+    width:70%;
+    height:10%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-10%;
+    left:15%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.golf::before{
+    content:'Golf';
+    width:40%;
+    height:22%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-22%;
+    left:30%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.gym::before{
+    content:'Gymnastics';
+    width:70%;
+    height:15%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-15%;
+    left:15%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.cricket::before{
+    content:'Cricket';
+    width:40%;
+    height:18%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-18%;
+    left:30%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.football::before{
+    content:'Football';
+    width:40%;
+    height:15%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-15%;
+    left:30%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.hockey::before{
+    content:'Hockey';
+    width:40%;
+    height:20%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-20%;
+    left:30%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.baseball::before{
+    content:'Baseball';
+    width:50%;
+    height:20%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-20%;
+    left:25%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+.swimming::before{
+    content:'Swimming';
+    width:50%;
+    height:20%;
+    color:#fff;
+    background:#5d5d5a;
+    font-size:35px;
+    text-align:center;
+    text-shadow:3px 3px 3px #333;
+    border:0.2px solid #fff;
+    border-radius:3px;
+    cursor: pointer;
+
+    position:absolute;
+    bottom:-20%;
+    left:25%;
+
+    opacity:0.8;
+
+    transition:all 0.5s;
+}
+
+.basketball:hover::before{
+    bottom:0;
+}
+.ballet:hover::before{
+    bottom:0;
+}
+.golf:hover::before{
+    bottom:0;
+}
+.gym:hover::before{
+    bottom:0;
+}
+.cricket:hover::before{
+    bottom:0;
+}
+.football:hover::before{
+    bottom:0;
+}
+.hockey:hover::before{
+    bottom:0;
+}
+.baseball:hover::before{
+    bottom:0;
+}
+.swimming:hover::before{
+    bottom:0;
+}
+
+
+
+
+
+.right{
+    float:left;
+    width:98%;
+    height:100px;
+    background-color:#ffcdab;
+    margin-top:3%;
+    margin-left:1%;
+    border-radius:10px;
+
+}
+.right p{
+    width:60%;
+    height:100%;
+    color:#5d5d5a;
+    float:left;
+    font-size:27px;
+    font-style:italic;
+    text-transform:capitalize;
+    text-shadow:1px 1px 2px #283a54;
+    margin-left:2%;
+
+    cursor: pointer;
+}
+.right p span{
+    color:#ffa45c;
+    text-shadow:2px 2px 3px #4d2238;
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'Lobster', cursive;
+    margin-left:10%;
+    text-transform:uppercase;
+    
+
+}
+.right ul{
+    /*width:35%;*/
+    float:left;
+    /*background:blue;*/
+    list-style-type:none;
+    padding:0;
+    margin:-7% 0 0 65%;
+
+    display:flex;
+}
+
+.right ul li a{
+    text-decoration:none;
+    font-size:30px;
+    color:#fff;
+    background:#5d5d5a;
+    
+    padding:1px 10px;
+    margin:0 10px;
+    border:3px solid #fff;
+    border-radius:50%;
+
+}
+.right ul li a:hover{
+    color:#5d5d5a;
+    background:#fff;
+    border:3px solid #ffa45c;
+}
+
+

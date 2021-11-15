@@ -1,0 +1,236 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /*perspective:1000px;*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.left{
+    position:fixed;
+    float:left; 
+    width:15%;
+    height:100vh;
+    background-color:#5d5d5a; 
+    border-radius:0 2% 2% 0;
+}
+.left img{
+   margin:5% 0 5% 25%;
+    border-radius:50%;
+}
+.left h2{
+    color:#ffa45c;
+    font-family: 'Fruktur', cursive;
+    padding:0;
+    margin:0;
+    margin-bottom:10%;
+    text-align:center;
+    text-shadow:2px 2px 2px #965f38;
+    cursor:pointer;
+}
+
+.menu ul{
+    width:75%;
+    height:20%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.menu ul li{
+    display:block;
+    width:100%;
+    text-align:center;
+
+}
+.menu ul li a{
+    display:block;
+    width:100%;
+    margin:auto;
+    font-size:20px;
+    text-decoration:none;
+    color:#4592af;
+
+    transition:all 0.5s;
+}
+.a span{
+    display:block;
+    width:100%;
+    padding:0 5%;
+}
+.a span:first-of-type{
+    color:#ffcdab;
+    text-shadow:2px 2px 3px #4d2238;
+    transform: scale(1);
+    transition:all 0.5s;
+    transition-delay:0.5s;
+
+}
+.a span:last-of-type{
+    color:#ffa45c;
+    text-shadow: 2px 2px 3px #45381c;
+    transform:translateY(-100%) scale(0);
+    transition:all 0.5s;
+}
+.a:hover span:first-of-type,.a:active span:first-of-type{
+    transform: scale(0);
+    transition-delay:0s;
+}
+.a:hover span:last-of-type,.a:active span:last-of-type{
+    transform:translateY(-100%) scale(1.1);
+     transition-delay:0.5s;
+}
+
+
+
+.form{
+    width:30%;
+     font-family: 'Lobster', cursive;
+    float:left;
+    margin:5% 0 0 20%;
+}
+.form h2{
+    width:90%;
+    color:#fff;
+    background-color:#ffa45c;
+    font-size:35px;
+    padding:10% 10%;
+    box-shadow:5px 5px 9px #5d5d5a;
+    cursor:pointer;
+
+    position:relative;
+    overflow:hidden;
+
+    transition:all 0.5s;
+    
+}
+.form h2::before{
+    content:'';
+    width:100%;
+    height:100%;
+
+    background-color:#ffcdab;
+
+    position:absolute;
+    top:-100%;
+    left:0;
+    z-index:-1;
+    
+    transform:rotate(180deg) scale(0);
+    transform-origin:top;
+    transition:all 0.5s;
+}
+.form h2:hover::before{
+    top:0;
+    transform:rotate(0) scale(1);
+}
+
+.form h2:hover{
+    color:#5d5d5a;
+    background:transparent;
+    transition-delay:0.2s;
+}
+.register,.offer{
+    transform:translateY(0);
+    transition:0.5s;
+
+}
+.form h2:hover .register,.form h2:hover .offer{
+    transform:translateY(-5px);
+     transition-delay:0.1s;
+}
+
+
+
+
+.form p{
+    width: 90%;
+    font-size:50px;
+    color:#fff;
+    background-color:#ffa45c;
+    padding:5% 5%;
+    margin-top:10%;
+    border-radius:10px;
+    box-shadow:5px 5px 9px #5d5d5a;
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+}
+.form p::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: #ffcdab;
+
+    position:absolute;
+    top:0;
+    left:-100%;
+
+    transition:all 0.5s;
+}
+.form p::after{
+    content:'5% discount for a member';
+    width:100%;
+    height:100%;
+    color:#5d5d5a;
+    font-size:54px;
+
+    position:absolute;
+    top:-100%;
+    left:0;
+
+    z-index:3;
+    transition:all 0.5s
+}
+.form p:hover::before{
+    left:0;
+}
+.form p:hover::after{
+    top:0;
+    left:4%;
+    transition-delay:0.5s;
+}
+
+
+form{
+    width:30%;
+    height:95vh;
+    background-color:#ffcdab;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin:1% 0 0 10%;
+    float:left;
+}
+form input:first-of-type{
+    margin-top:7%;
+}
+form input{
+    width:60%;
+    height:30px;
+    color:#5d5d5a;
+    background-color:#ffcdab;
+    font-size:20px;
+    font-style:italic;
+    border:3px solid #fff;
+    box-shadow:2px 2px 2px #ffff;
+    outline:none;
+    margin:4% 20%;
+}
+form button{
+    width:50%;
+    padding:7px 15px;
+    background-color:transparent;
+    border:3px solid #fff;
+    box-shadow:2px 2px 2px #ffff;
+    margin:5% 25%;
+
+    cursor:pointer;
+} 
